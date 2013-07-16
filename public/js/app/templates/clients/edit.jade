@@ -1,0 +1,46 @@
+div.row
+    div.span8
+        div.page-header
+            h1 Edit client
+
+        form.form-horizontal
+            fieldset
+                div.control-group
+                    label(for="name-input").control-label Name
+                    div.controls
+                        div.input-prepend
+                            span.add-on
+                                i.icon-user
+                            input#name-input.input-xlarge(type="text", value= client.name)
+                            p.help-block Enter name above, has to be between 2 and 100 chars.
+
+                div.control-group
+                    label(for="email-input").control-label Email
+                    div.controls
+                        div.input-prepend
+                            span.add-on
+                                i.icon-envelope
+                            input#email-input.input-xlarge(type="text", value= client.email)
+                            p.help-block Enter a valid email above.
+
+                div.control-group
+                    label(for="company-input").control-label Company
+                    div.controls
+                        div.input-prepend
+                            span.add-on
+                                i.icon-briefcase
+                            input#company-input.input-xlarge(type="text",  value= client.company)
+                            p.help-block Enter company above, has to be between 2 and 100 chars.
+
+                div.control-group
+                    label(for="phone-input").control-label Phone
+                    div.controls
+                        div.input-prepend
+                            span.add-on
+                                i.icon-bell
+                            input#phone-input.input-xlarge(type="text" , value= client.phone)
+                            p.help-block Enter phone above, has to be between 7 and 100 chars.
+
+                div.form-actions
+                    a.btn.save-btn Save
+                    a.btn.back-btn Back

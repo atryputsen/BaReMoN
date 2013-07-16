@@ -1,0 +1,23 @@
+{
+    "name"        : "BaReMoN",
+    "description" : "(Ba)ckbone+(Re)quirejs+(Mo)ngoDb+(N)ode BaReMoN is Backbone+Requirejs+MongoDb demo with Node.js on the backend",
+    "version"     : "0.0.1",
+    "author"      : "Aliaksei Tryputsen <a.triputen@gmail.com>",
+    "engines"     : {
+      "node": ">=0.6.x"
+    },
+    "dependencies": {
+      "async"           : "0.1.x",
+      "colors"          : "*",
+      "jade"          : "*",
+      "connect"         : "2.1.x",
+      "connect-timeout" : "0.0.1",
+      "express"         : "2.x.x",
+      "moment"          : "1.6.x",
+      "mongoose"        : "2.5.x",
+      "uglify-js"       : "1.2.x",
+      "underscore"      : "*",
+      "gzippo"          : "0.1.4",
+      "requirejs"       : "2.0.2"
+    }
+}

@@ -1,0 +1,20 @@
+h1 Login
+form.form-horizontal(action="#/login", method="post")
+    div.control-group
+        label(for="email-input").control-label Email:
+        div.controls
+            div.input-prepend
+                input#email-input.input-xlarge(type="text", name="email", placeholder="Email")
+                p.help-block Enter a valid email above.
+    div.control-group
+        label(for="password-input").control-label Password:
+        div.controls
+            div.input-prepend
+                input#password-input.input-xlarge(type="password", name="password", placeholder="Password")
+                p.help-block Enter password above.
+    div.control-group
+        div.controls
+            input#loginButton.btn(type="submit", value="Sign in")
+div#error.span4
+    button.close(type="button", data-dismiss="alert") x
+    div.alert.alert-error

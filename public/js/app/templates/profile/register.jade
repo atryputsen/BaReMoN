@@ -1,0 +1,36 @@
+h1 Register
+form.form-horizontal
+    fieldset
+        div.control-group
+            label(for="name-input").control-label Name:
+            div.controls
+                div.input-prepend
+                    input#name-input.input-xlarge(type="text", name="name", placeholder="Your Name")
+                    p.help-block Enter name above, has to be between 2 and 100 chars.
+    fieldset
+        div.control-group
+            label(for="email-input").control-label Email:
+            div.controls
+                div.input-prepend
+                    input#email-input.input-xlarge(type="text", name="email", placeholder="Email")
+                    p.help-block Enter a valid email above.
+            label(for="cemail-input").control-label Email (confirm):
+            div.controls
+                div.input-prepend
+                    input#cemail-input.input-xlarge(type="text", name="cemail", placeholder="Email")
+                    p.help-block Enter a valid email above.
+    fieldset
+        div.control-group
+            label(for="password-input").control-label Password:
+            div.controls
+                div.input-prepend
+                    input#password-input.input-xlarge(type="password", name="password", placeholder="Password")
+                    p.help-block Enter password above.
+            label(for="cpassword-input").control-label Password (confirm):
+            div.controls
+                div.input-prepend
+                    input#cpassword-input.input-xlarge(type="password", name="cpassword", placeholder="Password")
+                    p.help-block Enter password above.
+    div.control-group
+        div.controls
+            input.btn(type="submit", value="Register")

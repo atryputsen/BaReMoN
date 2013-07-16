@@ -1,0 +1,48 @@
+div.row
+    div.span6
+        div.page-header
+            h1= client.name
+        p
+            table.table.table-striped
+                tbody
+                    tr
+                        td
+                            h6 Name:
+                        td
+                            = client.name
+                    tr
+                        td
+                            h6 Email:
+                        td
+                            a(href="mailto:" + client.email)= client.email
+                    tr
+                        td
+                            h6 Company:
+                        td
+                            = client.company
+                    tr
+                        td
+                            h6 Phone:
+                        td
+                            = client.phone
+        p
+            a(href="#/clients/" + client._id + "/edit").btn.edit-btn Edit
+            button.btn.delete-btn Delete                            
+        p    
+            h2 Projects
+            table.table
+                thead
+                    tr
+                        th
+                            | Name
+                        th
+                            | Technology
+                        th
+                            | Description
+                tbody
+                    each project in projects
+                        tr
+                            td
+                                a(href="#/projects/" +project._id)= project.name
+                            td= project.technology
+                            td= project.description

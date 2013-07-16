@@ -1,0 +1,29 @@
+div.row
+    div.span12
+        div.page-header
+            h1 List of clients
+        p
+            table.table
+                thead
+                    tr
+                        th
+                            i.icon-user
+                            | Name
+                        th
+                            i.icon-envelope
+                            | Email
+                        th
+                            i.icon-briefcase
+                            | Company
+                        th
+                            i.icon-bell
+                            | Phone
+                tbody
+                    each client in clients
+                        tr
+                            td
+                                a(href="#/clients/" +client._id)= client.name
+                            td
+                                a(href="mailto: "+client.email)= client.email
+                            td= client.company
+                            td= client.phone

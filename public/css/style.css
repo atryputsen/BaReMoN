@@ -1,0 +1,30 @@
+html,
+html a {
+  -webkit-font-smoothing: antialiased !important;
+}
+body {
+  font-family: 'Open Sans', Helvetica, Sans-Serif;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+#header h1 a {
+  font-family: 'Trocchi', Sans-Serif;
+}
+#header h1 a .ss-icon {
+  position: relative;
+  top: 1px;
+  right: 1px;
+  font-size: 17px;
+}
+#content {
+  border-radius: 8px;
+}
+.ajax-loader {
+  display: none;
+}
+footer {
+  display: none;
+}
+#error {
+  display: none;
+}
